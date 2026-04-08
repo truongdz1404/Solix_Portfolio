@@ -27,7 +27,7 @@ export const Navbar = () => {
       scrolled ? "bg-background/80 backdrop-blur-md border-border py-4" : "bg-transparent border-transparent py-6"
     )}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-heading text-2xl font-bold tracking-tighter text-gradient">
+        <a href="#" className="font-heading text-4xl font-bold tracking-tighter text-gradient">
           SOLIX
         </a>
 
@@ -37,14 +37,14 @@ export const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm font-medium text-text-muted hover:text-text-primary transition-colors"
+              className="text-base font-medium text-text-muted hover:text-text-primary transition-colors"
             >
               {link.name}
             </a>
           ))}
           <a 
             href="#contact"
-            className="bg-gradient-brand px-6 py-2 rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
+            className="bg-gradient-brand px-6 py-2 rounded-full text-base font-bold hover:opacity-90 transition-opacity"
           >
             Get a Quote
           </a>

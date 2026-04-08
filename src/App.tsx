@@ -10,23 +10,24 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-background overflow-x-hidden">
-      {/* Noise Overlay */}
-      <div className="noise" />
-      
+    <>
       <Navbar />
-      
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <TechStackSection />
-        <ProjectsSection />
-        <ProcessSection />
-        <ContactSection />
-      </main>
+      <div className="relative min-h-screen bg-background overflow-x-hidden scale-125 origin-top">
+        {/* Noise Overlay */}
+        <div className="noise" />
 
-      <Footer />
-    </div>
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ServicesSection />
+          <TechStackSection />
+          <ProjectsSection />
+          <ProcessSection />
+          <ContactSection />
+        </main>
+
+        <Footer />
+      </div>
+    </>
   );
 }
