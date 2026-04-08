@@ -17,7 +17,7 @@ export const ContactSection = () => {
               <GradientText>Together</GradientText>
             </h2>
             <p className="text-text-muted text-lg mb-10 max-w-md">
-              Chúng tôi mở cửa cho các dự án outsource, hợp tác dài hạn và tư vấn kỹ thuật. Có dự án trong đầu? Hãy nói chuyện.
+              Chúng tôi mở cửa cho các dự án outsource, hợp tác dài hạn và tư vấn kỹ thuật. Có dự án trong đầu? Hãy liên hệ với chúng tôi.
             </p>
 
             <div className="space-y-6">

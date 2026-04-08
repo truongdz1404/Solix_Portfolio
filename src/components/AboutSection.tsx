@@ -27,7 +27,7 @@ export const AboutSection = () => {
                 Solix là một team freelancer tại Việt Nam, chuyên nhận outsource phát triển web cho các đối tác trong và ngoài nước.
               </p>
               <p>
-                Chúng tôi tập trung vào các sản phẩm có chiều sâu: SaaS platforms, hệ thống CRM/HRM, ứng dụng quản lý nội bộ và e-commerce. Không chỉ code — chúng tôi tư vấn, thiết kế và ship sản phẩm.
+                Chúng tôi tập trung vào các sản phẩm có chiều sâu: SaaS platforms, hệ thống CRM/HRM, ứng dụng quản lý nội bộ và e-commerce. Không chỉ code — chúng tôi tư vấn, thiết kế và bảo trì sản phẩm.
               </p>
             </div>
           </motion.div>
