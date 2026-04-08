@@ -11,14 +11,27 @@ export const ContactSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              className="font-heading text-4xl md:text-5xl font-bold mb-6"
+            >
               Let's Build <br />
               <GradientText>Together</GradientText>
-            </h2>
-            <p className="text-text-muted text-lg mb-10 max-w-md">
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="text-text-muted text-lg mb-10 max-w-md"
+            >
               Chúng tôi mở cửa cho các dự án outsource, hợp tác dài hạn và tư vấn kỹ thuật. Có dự án trong đầu? Hãy liên hệ với chúng tôi.
-            </p>
+            </motion.p>
 
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -55,6 +68,7 @@ export const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="glass p-8 rounded-3xl"
           >
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>

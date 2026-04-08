@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { ProjectCard } from './ui/ProjectCard';
 import { GradientText } from './ui/GradientText';
 
@@ -57,12 +58,24 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
+          <motion.h2 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="font-heading text-4xl md:text-5xl font-bold mb-4"
+          >
             Our <GradientText>Work</GradientText>
-          </h2>
-          <p className="text-text-muted text-lg max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-text-muted text-lg max-w-2xl mx-auto"
+          >
             Các sản phẩm thực tế chúng tôi đã build và ship
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
